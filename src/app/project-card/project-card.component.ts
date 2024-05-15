@@ -6,5 +6,5 @@ import { Component,Input } from '@angular/core';
   styleUrls: ['./project-card.component.css']
 })
 export class ProjectCardComponent {
-  @Input() projectName: string = "";
+  @Input() projectName= {} as Project;
 }
