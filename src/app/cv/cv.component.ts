@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-
+import { Project } from '../_models/Project';
 @Component({
   selector: 'app-cv',
   templateUrl: './cv.component.html',
   styleUrls: ['./cv.component.css']
 })
 export class CVComponent {
-  project:Project = {
+  project: Project= {
     id:0,
     name:'Site Portfolio Angular',
     description:'Projet fait avec angular',
