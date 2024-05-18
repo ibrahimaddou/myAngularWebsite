@@ -11,8 +11,8 @@ export class CVComponent {
   project: Project= {
     id:0,
     name:'Site Portfolio Angular',
-    //summary:'',
-    description:'Projet fait avec angular',
+    summary:'Projet fait avec angular',
+    description:'',
     projectLink:'github.com/ibrahimaddou',
     tags:[Tag.ANGULAR, Tag.C],
     pictures:[]
