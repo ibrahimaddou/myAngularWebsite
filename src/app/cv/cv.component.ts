@@ -8,16 +8,10 @@ import { Tag } from '../_models/Tag';
   styleUrls: ['./cv.component.css']
 })
 export class CVComponent {
-  project: Project= {
-    id:0,
-    name:'Site Portfolio Angular',
-    summary:'Projet fait avec angular',
-    description:'',
-    projectLink:'github.com/ibrahimaddou',
-    tags:[Tag.ANGULAR, Tag.C],
-    pictures:[]
-
-  }
+  projects : Project[]=
+  [ { id:0,name:'Site Portfolio Angular',summary:'Projet fait avec angular',description:'',projectLink:'github.com/ibrahimaddou',tags:[Tag.ANGULAR],pictures:[]},
+    { id:1,name:'Application bancaire en C',summary:'Projet fait avec C',description:'',projectLink:'github.com/ibrahimaddou',tags:[Tag.C],pictures:[]} 
+  ];
   constructor(private titleService: Title ){
     this.titleService.setTitle('Ibrahim Addou - CV');
   }
