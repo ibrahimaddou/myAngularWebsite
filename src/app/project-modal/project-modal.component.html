@@ -4,10 +4,8 @@
 </div>
 <div class="modal-body">
         <carousel>
-            <slide><img src="../../assets/img1.png" alt="" style="display: block; width: 100%;"></slide>
-            <slide><img src="../../assets/img2.png" alt="" style="display: block; width: 100%;"></slide>
+            <slide *ngFor="let img of project.pictures"><img src="{{img}}" alt="slide" style="display: block; width: 100%;"></slide>  
         </carousel>
-         
         <h4>Description</h4>
         <div>{{project.summary}}</div>
     

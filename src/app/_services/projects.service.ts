@@ -8,8 +8,8 @@ import { retry } from 'rxjs';
 })
 export class ProjectsService {
   projects : Project[]=
-  [ { id:0,name:'Site Portfolio Angular',summary:'Projet fait avec angular',description:'',projectLink:'github.com/ibrahimaddou',tags:[Tag.ANGULAR],pictures:[]},
-    { id:1,name:'Application bancaire en C',summary:'Projet fait avec C',description:'',projectLink:'github.com/ibrahimaddou',tags:[Tag.C],pictures:[]} 
+  [ { id:0,name:'Site Portfolio Angular',summary:'Projet fait avec angular',description:'',projectLink:'github.com/ibrahimaddou',tags:[Tag.ANGULAR],pictures:["../../assets/img1.png","../../assets/img2.jpg"]},
+    { id:1,name:'Application bancaire en C',summary:'Projet fait avec C',description:'',projectLink:'github.com/ibrahimaddou',tags:[Tag.C],pictures:["../../assets/img-c.jpg"]} 
   ];
   constructor() { }
 
