@@ -6,17 +6,19 @@
             </div>
         </div>
         <div class="col-lg shadow border m-1">
-            <div class="text-center">
+            <div class="mt-2 text-center">
                 <h2>Présentation</h2>
                 <p>Bienvenue dans mon site personel. Je m'appelle Ibrahim, et je suis un étudiant en licence informatique à l'université de Pau</p>
             </div>
         </div>
-    </div>
-    <div class="row">
         <div class="col-lg shadow border m-1">
-            <div class="text-center">
+            <div class="mt-2 text-center">
                 <h2>Aperçu des Projets</h2>
-                <h4 >{{featuredProject.name}}</h4>
+                <h5 >{{featuredProject.name}}</h5>
+                <carousel>
+                    <slide *ngFor="let img of featuredProject.pictures"><img src="{{img}}" alt="slide" style="display: block; width: 100%;"></slide>  
+                </carousel>
+                <p class="mt-2">Vous trouverez plus d'informations sur le projet sur la page des projets</p>
                 
             </div>
         </div>
