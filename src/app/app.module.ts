@@ -12,7 +12,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { ProjectModalComponent } from './project-modal/project-modal.component';
-
+import { CarouselModule } from 'ngx-bootstrap/carousel'
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,12 +23,14 @@ import { ProjectModalComponent } from './project-modal/project-modal.component';
     ContactComponent,
     ProjectCardComponent,
     ProjectModalComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
+    CarouselModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
