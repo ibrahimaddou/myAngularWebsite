@@ -9,7 +9,9 @@ import { ProjectsService } from '../_services/projects.service';
   styleUrls: ['./cv.component.css']
 })
 export class CVComponent implements OnInit{
-  projects= {} as Project[]
+  projects= {} as Project[];
+  isCollapsed: boolean =true;
+
   constructor(private titleService: Title,private projectService:ProjectsService ){
     this.titleService.setTitle('Ibrahim Addou - CV');
   }
