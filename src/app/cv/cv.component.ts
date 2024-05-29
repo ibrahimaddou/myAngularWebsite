@@ -11,12 +11,17 @@ import { ProjectsService } from '../_services/projects.service';
 export class CVComponent implements OnInit{
   projects= {} as Project[];
   isCollapsed: boolean =true;
+  typescript : boolean =false;
 
   constructor(private titleService: Title,private projectService:ProjectsService ){
     this.titleService.setTitle('Ibrahim Addou - CV');
   }
   ngOnInit(): void {  //onInit a callback method
     //throw new Error('Method not implemented.');
-    this.projects=this.projectService.getProjects();//appel au service avec les données retourner par  la methode getProjects()
+    this.projects=this.projectService.getProjects();//appel   au service avec les données retourner par  la methode getProjects()
+  }
+  Filter(){
+    let filterTags:Tag[]=[];
+    this.projects=this.projectService.getProjectByFilter(filterTags);
   }
 }
