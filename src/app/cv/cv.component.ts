@@ -22,6 +22,9 @@ export class CVComponent implements OnInit{
   }
   Filter(){
     let filterTags:Tag[]=[];
+    if (this.typescript) {
+      filterTags.push(Tag.C);
+    }
     this.projects=this.projectService.getProjectByFilter(filterTags);
   }
 }
