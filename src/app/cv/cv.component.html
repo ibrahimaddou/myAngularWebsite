@@ -11,7 +11,7 @@
                             <small><b>Langages :</b></small>
                             <div class="form-group">
                                 <div class="form-check">
-                                    <input type="checkbox" class="form-check-input position-static me-2">
+                                    <input type="checkbox" class="form-check-input position-static me-2" [(ngModel)]="c" (change)="Filter()" name="C">
                                     <label class="form-check label small">C</label>
                                 </div>
                             </div>
@@ -20,7 +20,7 @@
                             <small><b>Framework :</b></small>
                             <div class="form-group">
                                 <div class="form-check">
-                                    <input type="checkbox" class="form-check-input position-static me-2" [(ngModel)]="typescript" (change)="Filter()" name="TypeScript">
+                                    <input type="checkbox" class="form-check-input position-static me-2" >
                                     <label class="form-check label small">Angular</label>
                                 </div>
                             </div>

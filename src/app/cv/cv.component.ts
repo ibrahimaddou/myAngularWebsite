@@ -11,7 +11,7 @@ import { ProjectsService } from '../_services/projects.service';
 export class CVComponent implements OnInit{
   projects= {} as Project[];
   isCollapsed: boolean =true;
-  typescript : boolean =false;
+  c : boolean =false;
 
   constructor(private titleService: Title,private projectService:ProjectsService ){
     this.titleService.setTitle('Ibrahim Addou - CV');
@@ -22,7 +22,7 @@ export class CVComponent implements OnInit{
   }
   Filter(){
     let filterTags:Tag[]=[];
-    if (this.typescript) {
+    if (this.c) {
       filterTags.push(Tag.C);
     }
     this.projects=this.projectService.getProjectByFilter(filterTags);
