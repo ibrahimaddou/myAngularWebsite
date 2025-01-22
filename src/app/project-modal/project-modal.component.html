@@ -3,9 +3,6 @@
     <button class="btn-close" (click)="bsModuleRef.hide()"></button>
 </div>
 <div class="modal-body">
-        <carousel>
-            <slide *ngFor="let img of project.pictures"><img src="{{img}}" alt="slide" style="display: block; width: 100%;"></slide>  
-        </carousel>
         <h4 class="mt-2">Description</h4>
         <div>{{project.summary}}</div>
         <p>Vous trouverez le projet sur Github <a href="{{project.projectLink}}" target="_blank">ici</a></p>
